@@ -1,5 +1,14 @@
 Apache Pig
 ===========
+
+PIG ON FLINK BUILD INSTRUCTIONS
+ant -Dhadoopversion=23
+ant clean eclipse-files -Dhadoopversion=23
+ant compile gen -Dhadoopversion=23
+.. import to eclipse ... fix javacc classpath
+run org.apache.pig.Main
+
+
 Pig is a dataflow programming environment for processing very large files. Pig's
 language is called Pig Latin. A Pig Latin program consists of a directed
 acyclic graph where each node represents an operation that transforms data.
